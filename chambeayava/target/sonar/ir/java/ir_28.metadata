@@ -1,0 +1,7 @@
+com.example.helloworld.utilerias.Digestion#toHexString([B)Ljava/lang/String;
+java.lang.StringBuilder#instance-init#
+java.lang.StringBuilder#<init>(Ljava/lang/String;)V
+java.lang.StringBuilder#insert(IC)Ljava/lang/StringBuilder;
+java.math.BigInteger#instance-init#
+java.lang.StringBuilder#toString()Ljava/lang/String;
+java.math.BigInteger#<init>(I[B)V

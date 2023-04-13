@@ -1,0 +1,4 @@
+com.example.helloworld.productos.ProductoServiceImpl#getBigResult(I)Lcom/example/helloworld/productos/model/ResultadoConsulta;
+java.util.stream.Collectors#toList()Ljava/util/stream/Collector;
+null
+com.example.helloworld.productos.model.ResultadoConsulta#instance-init#

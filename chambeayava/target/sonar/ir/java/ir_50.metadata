@@ -1,0 +1,3 @@
+com.example.helloworld.productos.ProductoServiceImpl#guarda(Lcom/example/helloworld/productos/model/Producto;)V
+==
+ObtenProductoPorId com.example.helloworld.productos.ProductoServiceImpl#ObtenProductoPorId(I)Lcom/example/helloworld/productos/model/Producto;

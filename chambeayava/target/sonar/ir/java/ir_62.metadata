@@ -1,0 +1,6 @@
+com.example.helloworld.productos.LoginServiceImpl#base64encode(Ljava/lang/String;)Ljava/lang/String;
+java.lang.String#instance-init#
+java.lang.String#replace(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
+java.util.Base64#getUrlEncoder()Ljava/util/Base64$Encoder;
+java.lang.String#getBytes()[B
+java.lang.String#<init>([B)V

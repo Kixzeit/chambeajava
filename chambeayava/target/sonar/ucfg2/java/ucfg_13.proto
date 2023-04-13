@@ -1,0 +1,27 @@
+
+{com.example.helloworld.productos.ProductoController#listaTotal(I)Lcom/example/helloworld/productos/model/ResultadoConsulta;„
+z/home/ubuntu/development/code/segundo-examen/examen/src/main/java/com/example/helloworld/productos/ProductoController.java ('"1*ê
+1 (µ
+²
+ (#6
+%00com.example.helloworld.productos.ProductoService"__id*h
+
+__unknown_file (L*J5
+3com.example.helloworld.productos.ProductoController"
+productoServiceÔÑ
+ (4>
+%18com.example.helloworld.productos.model.ResultadoConsulta"zcom.example.helloworld.productos.ProductoService#getBigResult(I)Lcom/example/helloworld/productos/model/ResultadoConsulta;*T
+
+__unknown_file (8
+6
+%00com.example.helloworld.productos.ProductoService*"
+
+__unknown_file (
+""2getBigResult(I)"L
+ (5@
+>
+%18com.example.helloworld.productos.model.ResultadoConsulta: 
+
+__unknown_file (
+""B75
+3com.example.helloworld.productos.ProductoControllerH

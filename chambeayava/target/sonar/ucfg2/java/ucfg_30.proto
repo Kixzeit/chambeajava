@@ -1,0 +1,27 @@
+
+{com.example.helloworld.productos.ProductoServiceImpl#ObtenProductoPorId(I)Lcom/example/helloworld/productos/model/Producto;…
+{/home/ubuntu/development/code/segundo-examen/examen/src/main/java/com/example/helloworld/productos/ProductoServiceImpl.java (&"1*Ç
+1 (³
+°
+ (5
+%0/com.example.helloworld.productos.ProductoMapper"__id*g
+
+__unknown_file (K*I6
+4com.example.helloworld.productos.ProductoServiceImpl"
+productMapper¼¹
+ (+5
+%1/com.example.helloworld.productos.model.Producto"ncom.example.helloworld.productos.ProductoMapper#selectById(I)Lcom/example/helloworld/productos/model/Producto;*S
+
+__unknown_file (7
+5
+%0/com.example.helloworld.productos.ProductoMapper*"
+
+__unknown_file (
+""2selectById(I)"C
+ (,7
+5
+%1/com.example.helloworld.productos.model.Producto: 
+
+__unknown_file (
+""B86
+4com.example.helloworld.productos.ProductoServiceImplH
