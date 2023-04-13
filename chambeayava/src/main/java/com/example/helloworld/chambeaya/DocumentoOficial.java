@@ -1,4 +1,5 @@
-package com.example.helloworld.muebles.chambeaya;
+package com.example.helloworld.chambeaya;
+
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -9,10 +10,9 @@ import lombok.Setter;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class Tarjetas {
+public class DocumentoOficial {
   private int id;
-  private int idUsuario;
-  private String icono;
-  private String tipoPago;
-  private String NumeroTarjeta;
+  private int idUser;
+  private String nombre;
+
 }

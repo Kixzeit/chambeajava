@@ -1,4 +1,4 @@
-package com.example.helloworld.muebles.chambeaya;
+package com.example.helloworld.chambeaya;
 
 import javax.management.loading.PrivateClassLoader;
 
