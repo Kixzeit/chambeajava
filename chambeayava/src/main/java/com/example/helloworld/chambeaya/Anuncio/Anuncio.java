@@ -1,4 +1,4 @@
-package com.example.helloworld.chambeaya;
+package com.example.helloworld.chambeaya.Anuncio;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

@@ -1,4 +1,4 @@
-package com.example.helloworld.chambeaya;
+package com.example.helloworld.chambeaya.Documento;
 
 
 import lombok.AllArgsConstructor;
@@ -10,6 +10,8 @@ import lombok.Setter;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
+
+
 public class DocumentoOficial {
   private int id;
   private int idUser;
