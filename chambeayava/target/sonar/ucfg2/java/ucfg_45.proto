@@ -1,47 +1,0 @@
-
-Gcom.example.helloworld.productos.Contenido#toString()Ljava/lang/String;{
-q/home/ubuntu/development/code/segundo-examen/examen/src/main/java/com/example/helloworld/productos/Contenido.java ("1*‡
-1 (€
-~
- (
-%0java.lang.String"__id*T
-
-__unknown_file (8*6,
-*com.example.helloworld.productos.Contenido"
-userh
-f
- (
-%1java.lang.String"__concat*$
- (
-
-%0java.lang.String*
- (
-""
-}
- (
-%2java.lang.String"__id*S
-
-__unknown_file (7*5,
-*com.example.helloworld.productos.Contenido"
-rolz
-x
- (
-%3java.lang.String"__concat*$
- (
-
-%1java.lang.String*$
- (
-
-%2java.lang.Stringh
-f
- (&
-%4java.lang.String"__concat*$
- (
-
-%3java.lang.String*
-" (&
-"""$
- ('
-
-%4java.lang.StringB.,
-*com.example.helloworld.productos.ContenidoH

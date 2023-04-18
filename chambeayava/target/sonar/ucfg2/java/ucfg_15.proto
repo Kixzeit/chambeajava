@@ -1,81 +1,0 @@
-
-~com.example.helloworld.productos.ProductoController#fakeCambiaPassword(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;Ñ
-z/home/ubuntu/development/code/segundo-examen/examen/src/main/java/com/example/helloworld/productos/ProductoController.java( (($"startingBlock*œ
-startingBlock($ *(/≥
-∞
-) )(
-%3"
-__annotate*U
-
-__unknown_file (97
-5org.springframework.web.bind.annotation.RequestHeader*;
-
-__unknown_file (
-
-	tokenDadojava.lang.String]
-[
-)" )(+
-	tokenDadojava.lang.String"__annotation*"
-
-__unknown_file (
-
-%3∂
-≥
-* *(
-%4"
-__annotate*T
-
-__unknown_file (86
-4org.springframework.web.bind.annotation.RequestParam*?
-
-__unknown_file (#
-!
-nuevoPasswordjava.lang.Stringa
-_
-*! *(.!
-nuevoPasswordjava.lang.String"__annotation*"
-
-__unknown_file (
-
-%4*
-1*¥
-1+ +(Ø
-¨
-+ +(3
-%0-com.example.helloworld.productos.LoginService"__id*e
-
-__unknown_file (I*G5
-3com.example.helloworld.productos.ProductoController"
-loginServiceíè
-+ +(<
-%1java.lang.String"lcom.example.helloworld.productos.LoginService#cambia(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;*Q
-
-__unknown_file (5
-3
-%0-com.example.helloworld.productos.LoginService*;
-
-__unknown_file (
-
-	tokenDadojava.lang.String*?
-
-__unknown_file (#
-!
-nuevoPasswordjava.lang.String2,cambia(Ljava/lang/String;Ljava/lang/String;)∑
-¥
-+ +(<
-%2"Horg.springframework.web.servlet.ModelAndView#<init>(Ljava/lang/String;)V*"
-
-__unknown_file (
-""*4
-
-__unknown_file (
-
-%1java.lang.String"$
-+ +(=
-
-%1java.lang.String:)
-) )(,
-	tokenDadojava.lang.String:-
-* *(.!
-nuevoPasswordjava.lang.StringB75
-3com.example.helloworld.productos.ProductoControllerH

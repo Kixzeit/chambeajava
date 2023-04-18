@@ -1,6 +1,0 @@
-com.example.helloworld.productos.LoginServiceImpl#login(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-com.example.helloworld.productos.LoginServiceImpl#base64encode(Ljava/lang/String;)Ljava/lang/String;
-com.example.helloworld.productos.LoginServiceImpl#consultaBaseDeDatos(Ljava/lang/String;Ljava/lang/String;)Z
-java.lang.String#replace(CC)Ljava/lang/String;
-java.lang.System#currentTimeMillis()J
-com.example.helloworld.utilerias.Digestion#generateMd5(Ljava/lang/String;)Ljava/lang/String;

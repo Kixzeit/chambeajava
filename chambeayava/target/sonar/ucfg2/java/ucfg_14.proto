@@ -1,81 +1,0 @@
-
-ucom.example.helloworld.productos.ProductoController#fakeLogin(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;„
-z/home/ubuntu/development/code/segundo-examen/examen/src/main/java/com/example/helloworld/productos/ProductoController.java ("startingBlock*º
-startingBlock !(*­
-ª
-   (
-%3"
-__annotate*T
-
-__unknown_file (86
-4org.springframework.web.bind.annotation.RequestParam*6
-
-__unknown_file (
-
-userjava.lang.StringX
-V
- !  (%
-userjava.lang.String"__annotation*"
-
-__unknown_file (
-
-%3±
-®
-! !(
-%4"
-__annotate*T
-
-__unknown_file (86
-4org.springframework.web.bind.annotation.RequestParam*:
-
-__unknown_file (
-
-passwordjava.lang.String\
-Z
-!! !()
-passwordjava.lang.String"__annotation*"
-
-__unknown_file (
-
-%4*
-1*¨
-1" "(¯
-¬
-" "(3
-%0-com.example.helloworld.productos.LoginService"__id*e
-
-__unknown_file (I*G5
-3com.example.helloworld.productos.ProductoController"
-loginService†ƒ
-" "(1
-%1java.lang.String"kcom.example.helloworld.productos.LoginService#login(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;*Q
-
-__unknown_file (5
-3
-%0-com.example.helloworld.productos.LoginService*6
-
-__unknown_file (
-
-userjava.lang.String*:
-
-__unknown_file (
-
-passwordjava.lang.String2+login(Ljava/lang/String;Ljava/lang/String;)·
-´
-" "(1
-%2"Horg.springframework.web.servlet.ModelAndView#<init>(Ljava/lang/String;)V*"
-
-__unknown_file (
-""*4
-
-__unknown_file (
-
-%1java.lang.String"$
-" "(2
-
-%1java.lang.String:$
-   (&
-userjava.lang.String:(
-! !()
-passwordjava.lang.StringB75
-3com.example.helloworld.productos.ProductoControllerH

@@ -1,21 +1,0 @@
-
-Icom.example.helloworld.muebles.MuebleController#muebles()Ljava/util/List;€
-v/home/ubuntu/development/code/segundo-examen/examen/src/main/java/com/example/helloworld/muebles/MuebleController.java ( "1*¬
-1 (­
-ª
- (3
-%0-com.example.helloworld.muebles.MueblesService"__id*c
-
-__unknown_file (G*E1
-/com.example.helloworld.muebles.MuebleController"
-mueblesServiceÈÅ
- ('
-%1java.util.List"Fcom.example.helloworld.muebles.MueblesService#getAll()Ljava/util/List;*Q
-
-__unknown_file (5
-3
-%0-com.example.helloworld.muebles.MueblesService2getAll()""
-	 ((
-
-%1java.util.ListB31
-/com.example.helloworld.muebles.MuebleControllerH

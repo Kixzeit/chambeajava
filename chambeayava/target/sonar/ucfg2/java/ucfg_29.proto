@@ -1,21 +1,0 @@
-
-]com.example.helloworld.productos.ProductoServiceImpl#obtenTodosLosProductos()Ljava/util/List;…
-{/home/ubuntu/development/code/segundo-examen/examen/src/main/java/com/example/helloworld/productos/ProductoServiceImpl.java (0"1*¶
-1 (³
-°
- (5
-%0/com.example.helloworld.productos.ProductoMapper"__id*g
-
-__unknown_file (K*I6
-4com.example.helloworld.productos.ProductoServiceImpl"
-productMapperÌÉ
- (%
-%1java.util.List"Hcom.example.helloworld.productos.ProductoMapper#getAll()Ljava/util/List;*S
-
-__unknown_file (7
-5
-%0/com.example.helloworld.productos.ProductoMapper2getAll()""
- (&
-
-%1java.util.ListB86
-4com.example.helloworld.productos.ProductoServiceImplH

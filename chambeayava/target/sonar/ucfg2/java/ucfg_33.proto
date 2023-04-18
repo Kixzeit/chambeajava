@@ -1,147 +1,0 @@
-
-~com.example.helloworld.productos.ProductoServiceImpl#getBigResult(I)Lcom/example/helloworld/productos/model/ResultadoConsulta;Ö
-{/home/ubuntu/development/code/segundo-examen/examen/src/main/java/com/example/helloworld/productos/ProductoServiceImpl.java ()"1*Ñ
-1 ()≥
-∞
- ()5
-%0/com.example.helloworld.productos.ProductoMapper"__id*g
-
-__unknown_file (K*I6
-4com.example.helloworld.productos.ProductoServiceImpl"
-productMapperºπ
- (85
-%1/com.example.helloworld.productos.model.Producto"ncom.example.helloworld.productos.ProductoMapper#selectById(I)Lcom/example/helloworld/productos/model/Producto;*S
-
-__unknown_file (7
-5
-%0/com.example.helloworld.productos.ProductoMapper*"
-
-__unknown_file (
-""2selectById(I)•
-¢
- (9;
-producto/com.example.helloworld.productos.model.Producto"__id*S
-
-__unknown_file (7
-5
-%1/com.example.helloworld.productos.model.Producto≥
-∞
-7 (D5
-%2/com.example.helloworld.productos.ProductoMapper"__id*g
-
-__unknown_file (K*I6
-4com.example.helloworld.productos.ProductoServiceImpl"
-productMapperîë
-7 (`
-%3java.util.List"Zcom.example.helloworld.productos.ProductoMapper#getAllCaractForProducto(I)Ljava/util/List;*S
-
-__unknown_file (7
-5
-%2/com.example.helloworld.productos.ProductoMapper*"
-
-__unknown_file (
-""2getAllCaractForProducto(I)i
-g
- (a!
-caracteristicasjava.util.List"__id*2
-
-__unknown_file (
-
-%3java.util.List≥
-∞
-( (55
-%4/com.example.helloworld.productos.ProductoMapper"__id*g
-
-__unknown_file (K*I6
-4com.example.helloworld.productos.ProductoServiceImpl"
-productMapperîë
-( (Q
-%5java.util.List"Zcom.example.helloworld.productos.ProductoMapper#getAllImagesForProducto(I)Ljava/util/List;*S
-
-__unknown_file (7
-5
-%4/com.example.helloworld.productos.ProductoMapper*"
-
-__unknown_file (
-""2getAllImagesForProducto(I)b
-`
- (R
-imagenesjava.util.List"__id*2
-
-__unknown_file (
-
-%5java.util.ListØ¨
-! !(6
-%6java.util.stream.Stream"6java.util.Collection#stream()Ljava/util/stream/Stream;*?
-
-__unknown_file (#
-!
-caracteristicasjava.util.List2stream()™
-ß
-!; !(Q!
-%7java.util.function.Function"__declareFunction*e
-
-__unknown_file (IG
-E__sonar_lambda_0$com.example.helloworld.productos.ProductoServiceImpläá
-! !(R
-%8"Sjava.util.stream.Stream#map(Ljava/util/function/Function;)Ljava/util/stream/Stream;*;
-
-__unknown_file (
-
-%6java.util.stream.Stream*?
-
-__unknown_file (#
-!
-%7java.util.function.Function2"map(Ljava/util/function/Function;)Æ
-´
-![ !(n 
-%9java.util.stream.Collector"@java.util.stream.Collectors#toList()Ljava/util/stream/Collector;*;
-
-__unknown_file ("
-java.util.stream.CollectorsP
-N
-! !(p
-carResjava.util.List"__id*"
-
-__unknown_file (
-""©¶
-" "(/
-%10java.util.stream.Stream"6java.util.Collection#stream()Ljava/util/stream/Stream;*8
-
-__unknown_file (
-
-imagenesjava.util.List2stream()´
-®
-"4 "(F"
-%11java.util.function.Function"__declareFunction*e
-
-__unknown_file (IG
-E__sonar_lambda_1$com.example.helloworld.productos.ProductoServiceImplçä
-" "(G
-%12"Sjava.util.stream.Stream#map(Ljava/util/function/Function;)Ljava/util/stream/Stream;*<
-
-__unknown_file ( 
-
-%10java.util.stream.Stream*@
-
-__unknown_file ($
-"
-%11java.util.function.Function2"map(Ljava/util/function/Function;)Ø
-¨
-"P "(c!
-%13java.util.stream.Collector"@java.util.stream.Collectors#toList()Ljava/util/stream/Collector;*;
-
-__unknown_file ("
-java.util.stream.CollectorsP
-N
-" "(e
-imgResjava.util.List"__id*"
-
-__unknown_file (
-"""
-$ $(?
-"": 
-
-__unknown_file (
-""B86
-4com.example.helloworld.productos.ProductoServiceImplH

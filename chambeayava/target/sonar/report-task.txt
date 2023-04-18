@@ -1,7 +1,0 @@
-organization=kix-mx
-projectKey=kix-mx-segundo-examen
-serverUrl=https://sonarcloud.io
-serverVersion=8.0.0.39607
-dashboardUrl=https://sonarcloud.io/dashboard?id=kix-mx-segundo-examen
-ceTaskId=AYdAIhJtOyLqpQ9todha
-ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AYdAIhJtOyLqpQ9todha
