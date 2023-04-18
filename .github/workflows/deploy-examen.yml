@@ -6,7 +6,7 @@ on:
   push:
     branches: [ "main" ]
     paths:
-      - 'examen/**'
+      - 'chambeajava/**'
 
 jobs:
   
@@ -26,13 +26,13 @@ jobs:
         uses: actions/cache@v3
         with:
           path: ~/.m2
-          key: examen-${{ hashFiles('**/pom.xml') }}
+          key: chambeajava-${{ hashFiles('**/pom.xml') }}
                       
       - name: package Project examen
         run: |
           sed -i 's/password_token/${{ secrets.GHCR_PAT }}/g' settings.xml
-          mvn --settings settings.xml -f examen/pom.xml deploy
-          mvn --settings settings.xml -f examen/pom.xml clean verify sonar:sonar -Dsonar.login=${{secrets.SNR_TKN}} -Dsonar.host.url=https://sonarcloud.io/ -Dsonar.organization=chambeaya -Dsonar.projectKey=kix-mx-chambeaya
+          mvn --settings settings.xml -f chambeajava/pom.xml deploy
+          mvn --settings settings.xml -f chambeajava/pom.xml clean verify sonar:sonar -Dsonar.login=${{secrets.SNR_TKN}} -Dsonar.host.url=https://sonarcloud.io/ -Dsonar.organization=chambeaya -Dsonar.projectKey=kix-mx-chambeaya
           
       
           
@@ -51,9 +51,9 @@ jobs:
         uses: docker/build-push-action@v2
         with:
             # relative path to the place where source code with Dockerfile is located
-            context: ./examen/
+            context: ./chambeajava/
             # Note: tags has to be all lower-case
             tags: |
-              ghcr.io/kixzeit/dockerized-examen:latest
+              ghcr.io/kixzeit/dockerized-chambeajava:latest
             # build on feature branches, push only on main branch
             push: ${{ github.ref == 'refs/heads/main' }}
