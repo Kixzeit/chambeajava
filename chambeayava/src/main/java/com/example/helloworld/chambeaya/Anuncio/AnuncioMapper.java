@@ -23,12 +23,7 @@ public interface AnuncioMapper {
       @Delete("DELETE FROM Anuncio WHERE id=#{idUser}")
       public void delete(int idUSer);	
 
-      // #{id},#{idUser},#{descripcionPequeña},#{descripcioCompleta},#{codigoPostal},#{oficio},#{telefonoNegocio},#{correoNegocio},#{nick},#{},#{},#{},#{}
 }
 
 
-// INSERT INTO`chambeaya`.`Anuncio`
-// (`idAnuncio`,`id_user`,`Descripcion_Pequeña`,`Descripcion_Completa`,
-// `Codigo_Postal`,`Oficio`,`Telefono_Negocio`,`Correo_Negocio`,`Nick`)
 
-// VALUES ('1', '1', 'cgdhjk', 'sfxgjcg', 'sdfh', 'adfg', 'asdf', 'SDFSDF', 'asdfasdf');

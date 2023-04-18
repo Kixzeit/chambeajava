@@ -31,10 +31,6 @@ import java.util.List;
     }
 
 
-//     INSERT INTO
-//     `chambeaya`.`Documento_Oficial`(`id`,`Id_User`,`Nombre`)
-
-// VALUES ('3', '2', 'adelante.jpg');
 
 
 

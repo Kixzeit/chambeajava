@@ -1,4 +1,4 @@
-package com.example.helloworld.chambeaya;
+package com.example.helloworld.chambeaya.MediaAnuncio;
 
 import java.util.List;
 
@@ -14,16 +14,12 @@ public interface MediaAnuncioMapper {
   @Select("SELECT * FROM MediaAnuncio WHERE id = #{id} ")
   public MediaAnuncio getById(int id);
 
-  @Insert("INSERT INTO MediaAnuncio VALUES(#{id},#{idUser},#{nombre})")
+  @Insert("INSERT INTO MediaAnuncio VALUES(#{id},#{Id_Anuncio},#{Nombre},#{Activa})")
   public void insert(MediaAnuncio p);
 
-  @Update("UPDATE MediaAnuncio SET  idUser=#{idUser}, nombre=#{nombre} WHERE id=#{id}")
+  @Update("UPDATE MediaAnuncio SET  idAnuncio=#{Id_Anuncio},nombre=#{nombre},activa=#{Activa}")
   public void update(MediaAnuncio p);
 
-  @Delete("DELETE FROM MediaAnuncio WHERE id=#{idUser}")
+  @Delete("DELETE FROM MediaAnuncio WHERE id=#{idAnuncio}")
   public void delete(int idUSer);
 }
-
-
-
-// #{},#{},#{},#{},#{},#{},#{},#{},{}#{},#{},#{},#{}

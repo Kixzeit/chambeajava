@@ -23,10 +23,3 @@ public interface DatosMapper {
   @Delete("DELETE FROM DatosPersonales WHERE id=#{idUser}")
   public void delete(int idUSer);
 }
-
-// INSERT INTO`chambeaya`.`Datos_Personales`(`Id_Datos`,`Nombre`,`Ap_Paterno`,
-// `Ap_Materno`,`Telefono`,`Correo`,`Fecha_Nacimiento`,`Codigo_Postal`)
-//  VALUES ('2', 'asdf', 'asdf', 'asdf', 'asdf', 'asdf', 'asdf', 'asdf');
-
-// #{id},#{idDatos},#{nombre},#{apPaterno},#{apMaterno},#{telefono},#{correo},#{fechaNacimiento},#{codigoPostal}#{},#{},#{},#{}
-// idDatos=#{idDatos},nombre=#{nombre},apPaterno=#{apPaterno},apMaterno=#{apMaterno},telefono=#{telefono},correo=#{correo},fechaNacimiento=#{fechaNacimiento},codigoPostal=#{codigoPostal}
