@@ -1,7 +1,5 @@
 package com.example.helloworld.chambeaya.MediaAnuncio;
 
-import javax.management.loading.PrivateClassLoader;
-
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;

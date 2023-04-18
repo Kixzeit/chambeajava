@@ -1,14 +1,11 @@
 package com.example.helloworld.productos;
 
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.example.helloworld.personas.Persona;
 import com.example.helloworld.productos.model.ResultadoConsulta;
 
 @RestController
@@ -16,12 +13,10 @@ import com.example.helloworld.productos.model.ResultadoConsulta;
 public class ProductoController {
     private ProductoService productoService;
     private LoginService loginService;
-    private InvokeRemoteRestService invokeService;
     
-    public ProductoController(ProductoService productoService, LoginService loginService, InvokeRemoteRestService invokeService) {
+    public ProductoController(ProductoService productoService, LoginService loginService) {
         this.productoService = productoService;
         this.loginService = loginService;
-        this.invokeService = invokeService;
     }
     
     @GetMapping(
@@ -48,15 +43,4 @@ public class ProductoController {
         return loginService.cambia(tokenDado, nuevoPassword);
     }
 
-    @PostMapping(
-            value = "/prueba",
-            produces = "application/json; charset=utf-8")
-    // <-- tienes que estar autenticado y tu token debe ser valido
-    public String Pruebita(
-            @RequestHeader("jwt") String jwt, 
-            @RequestBody Persona ccr)  {
-        // pido ccr sólo para ejemplificar el uso del body
-        return invokeService.checkJwt(jwt);
-    }
-    
 }
