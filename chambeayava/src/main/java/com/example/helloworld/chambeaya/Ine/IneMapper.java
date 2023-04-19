@@ -20,7 +20,7 @@ public interface IneMapper {
       @Insert("INSERT INTO ine VALUES(#{id},#{idUser},#{nombre},#{identificacion},#{activa})")
       public void insert(Ine p);
   
-      @Update("UPDATE ine SET  idUser=#{id_user},nombre=#{nombre},identificacion=#{identificacion},activa=#{activa} WHERE id=#{id}")
+      @Update("UPDATE ine SET  id_user=#{id_user},nombre=#{nombre},identificacion=#{identificacion},activa=#{activa} WHERE id=#{id}")
       public void update(Ine p);
   
 

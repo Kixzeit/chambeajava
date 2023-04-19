@@ -1,1 +1,5 @@
 // #{},#{},#{},#{},#{},#{},#{},#{},#{}#{},#{},#{},#{}
+
+
+task1= arreglar las tablas de la bd
+task2= corregir el case de los names de la bd
