@@ -11,7 +11,8 @@ import lombok.Setter;
 @NoArgsConstructor
 public class MediaAnuncio {
   private int id;
-  private int idAnuncio;
+  private int idUser;
   private String nombre;
   private Boolean activa;
+  private String Tipo;
 }

@@ -14,12 +14,12 @@ public interface TarjetasMapper {
   @Select("SELECT * FROM Tarjetas WHERE id = #{id} ")
   public Tarjetas getById(int id);
 
-  @Insert("INSERT INTO Tarjetas VALUES(#{id},#{Id_usuario},#{icono},#{tipo_pago},#{numero_tarjeta})")
+  @Insert("INSERT INTO Tarjetas VALUES(#{id},#{idUser},#{tipo},#{nombre},#{numeroTarjeta},#{mes},#{anio},#{cvv},#{icono})")
   public void insert(Tarjetas p);
 
-  @Update("UPDATE Tarjetas SET  idUsuario=#{Id_usuario},icono=#{icono},tipoPago=#{tipo_pago},numeroTarjeta=#{numero_tarjeta}")
+  @Update("UPDATE Tarjetas SET  idUser#{id_user},tipo=#{tipo},nombre=#{nombre},numeroTarjeta=#{numero_tarjeta},mes=#{mes},anio=#{anio},cvv=#{cvv},icono=#{icono} WHERE id=#{id}")
   public void update(Tarjetas p);
 
-  @Delete("DELETE FROM Tarjetas WHERE id=#{idAnuncio}")
-  public void delete(int idUSer);
+  @Delete("DELETE FROM Tarjetas WHERE id=#{id}")
+  public void delete(int id);
 }

@@ -8,18 +8,18 @@ import org.apache.ibatis.annotations.Select;
 import org.apache.ibatis.annotations.Update;
 
 public interface MediaAnuncioMapper {
-  @Select("SELECT * FROM MediaAnuncio")
+  @Select("SELECT * FROM media_anuncio")
   public List<MediaAnuncio> getAll();
 
-  @Select("SELECT * FROM MediaAnuncio WHERE id = #{id} ")
+  @Select("SELECT * FROM media_anuncio WHERE id = #{id} ")
   public MediaAnuncio getById(int id);
 
-  @Insert("INSERT INTO MediaAnuncio VALUES(#{id},#{Id_Anuncio},#{Nombre},#{Activa})")
+  @Insert("INSERT INTO media_anuncio VALUES(#{id},#{IdUSer},#{nombre},#{activa},#{tipo})")
   public void insert(MediaAnuncio p);
 
-  @Update("UPDATE MediaAnuncio SET  idAnuncio=#{Id_Anuncio},nombre=#{nombre},activa=#{Activa}")
+  @Update("UPDATE media_anuncio SET  id_user=#{id_user},nombre=#{nombre},activa=#{activa},tipo={tipo} WHERE id = #{id}")
   public void update(MediaAnuncio p);
 
-  @Delete("DELETE FROM MediaAnuncio WHERE id=#{idAnuncio}")
-  public void delete(int idUSer);
+  @Delete("DELETE FROM media_anuncio WHERE id=#{id}")
+  public void delete(int id);
 }

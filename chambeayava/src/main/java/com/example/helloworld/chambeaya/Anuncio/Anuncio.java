@@ -11,13 +11,14 @@ import lombok.Setter;
 @NoArgsConstructor
 public class Anuncio {
   private int id;
-  private int idAnuncio;
   private int idUser;
+  private int nombreNegocio;
   private String descripcionPequeña;
   private String descripcionCompleta;
   private String codigoPostal;
   private String oficio;
   private String telefonoNegocio;
   private String correoNegocio;
-  private String nick;
+  private String nickname;
 }
+

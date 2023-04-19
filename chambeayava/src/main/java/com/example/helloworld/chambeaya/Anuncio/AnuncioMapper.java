@@ -14,15 +14,14 @@ public interface AnuncioMapper {
       @Select("SELECT * FROM Anuncio WHERE id = #{id} ")
       public Anuncio getById(int id);
   
-      @Insert("INSERT INTO Anuncio VALUES(#{id},#{idUser},#{descripcionPequeña},#{descripcioCompleta},#{codigoPostal},#{oficio},#{telefonoNegocio},#{correoNegocio})")
+      @Insert("INSERT INTO Anuncio VALUES(#{id},#{idUser},#{nombreNegocio},#{descripcionPequeña},#{descripcionCompleta},#{codigoPostal},#{oficio},#{telefonoNegocio},#{correoNegocio}#{nickname})")
       public void insert(Anuncio p);
   
-      @Update("UPDATE Anuncio SET  idUser=#{idUser},descripcionPequeña=#{descripcionPequeña}, descripcioCompleta=#{descripcioCompleta},codigoPostal=#{codigoPostal},oficio=#{oficio},telefonoNegocio=#{telefonoNegocio},correoNegocio=#{correoNegocio}")
+      @Update("UPDATE Anuncio SET  id_user=#{id_user},nombre_negocio=#{nombre_negocio},descripcion_pequeña=#{descripcion_pequeña},descripcion_completa=#{descripcion_completa},codigo_postal=#{codigo_postal},oficio=#{oficio},telefono_negocio=#{telefono_negocio},correo_negocio=#{correo_negocio}nickname=#{nickname} WHERE id=#{id}")
       public void update(Anuncio p);
 
-      @Delete("DELETE FROM Anuncio WHERE id=#{idUser}")
+      @Delete("DELETE FROM Anuncio WHERE id=#{id}")
       public void delete(int idUSer);	
-
 }
 
 

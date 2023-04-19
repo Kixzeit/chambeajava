@@ -1,4 +1,4 @@
-package com.example.helloworld.chambeaya.DatosPersonales;
+package com.example.helloworld.chambeaya.Oficio;
 
 
 import lombok.AllArgsConstructor;
@@ -10,14 +10,17 @@ import lombok.Setter;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class DatosPersonales {
-  private int idDatos;
+public class Oficio {
+  private int id;
   private String nombre;
   private String apPaterno;
   private String apMaterno;
   private String telefono;
   private String correo;
   private String fechaNacimiento;
-  private String CodigoPostal;
-
+  private String estado;
+  private String municpio;
+  private String colonia;
+  private String codigoPostal;
+  private String imagenPrincipal;
 }

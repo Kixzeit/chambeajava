@@ -1,4 +1,4 @@
-package com.example.helloworld.chambeaya.Documento;
+package com.example.helloworld.chambeaya.Ine;
 
 
 import lombok.AllArgsConstructor;
@@ -11,10 +11,10 @@ import lombok.Setter;
 @AllArgsConstructor
 @NoArgsConstructor
 
-
-public class DocumentoOficial {
+public class Ine {
   private int id;
   private int idUser;
   private String nombre;
-
+  private boolean identificacion;
+  private Boolean activa;
 }
