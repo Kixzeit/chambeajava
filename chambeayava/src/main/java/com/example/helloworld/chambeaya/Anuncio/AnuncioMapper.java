@@ -24,7 +24,6 @@ public interface AnuncioMapper {
       @Result(property = "telefonoNegocio", column = "telefono_negocio"),
       @Result(property = "correoNegocio", column = "correo_negocio")
   })
-
   @Select("SELECT * FROM chambeaya")
   public List<Anuncio> getAll();
 

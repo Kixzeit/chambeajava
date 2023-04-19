@@ -14,5 +14,8 @@ public class ResultRequest {
   private Anuncio anuncio;
   private List<String> imagenes;
   private List<String> videos;
-  
+  private List<String> anuncios;
+  private List<String> tarjetas;
+  private List<String> credenciales;
+
 }

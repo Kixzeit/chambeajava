@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.example.helloworld.chambeaya.Anuncio.model.Anuncio;
 import com.example.helloworld.chambeaya.Anuncio.model.ResultRequest;
 
 
@@ -19,7 +20,10 @@ public class AnuncioController {
     return this.anuncioService.getBigResult(id);
   }
 
-  
+  // @GetMapping(value= "/get-ads-byid", produces = "application/json; charset=utf-8")
+  // public Anuncio
+
+
 }
 
 

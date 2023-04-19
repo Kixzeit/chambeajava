@@ -13,12 +13,11 @@ public interface AnuncioService {
    */
   List<Anuncio> getAllAds();
 
-  Anuncio geAdsById(int id);
+  Anuncio getAdsById(int id);
 
   void save(Anuncio anuncio);
 
   void delete(Anuncio anuncio);
 
   ResultRequest getBigResult(int id);
-
 }
