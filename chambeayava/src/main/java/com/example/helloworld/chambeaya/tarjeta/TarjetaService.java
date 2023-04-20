@@ -12,6 +12,7 @@ public interface TarjetaService {
    * @return Lista de Productos provenientes de la base de datos.
    */
   List<Tarjeta> getAllCards();
+  
 
   List<Tarjeta> getAllCardsByid(int id);
   /**

@@ -5,24 +5,24 @@ import java.util.List;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.example.helloworld.chambeaya.anuncio.model.Anuncio;
-
-
-//import com.example.helloworld.anuncio.model.ResultRequest;
-
-
+import com.example.helloworld.chambeaya.invoke.InvokeRemoteRestService;
 
 @RestController
 @RequestMapping(value = "/api")
 public class AnuncioController {
   private AnuncioService anuncioService;
+  private InvokeRemoteRestService invokeRemoteRestService;
 
-  public AnuncioController(AnuncioService anuncioService) {
+  public AnuncioController(AnuncioService anuncioService,InvokeRemoteRestService invokeRemoteRestService) {
     this.anuncioService = anuncioService;
+    this.invokeRemoteRestService = invokeRemoteRestService;
   }
 
   @GetMapping(value = "/get-ads", produces = "application/json; charset=utf-8")
@@ -31,7 +31,7 @@ public class AnuncioController {
   }
 
   @GetMapping(value = "/get-ads-byid", produces = "application/json; charset=utf-8")
-  public Anuncio AnuncioIndividual(@RequestParam int id) {
+  public Anuncio anuncioIndividual(@RequestParam int id) {
     return anuncioService.getAdsByid(id);
   }
 
@@ -41,16 +41,17 @@ public class AnuncioController {
   }
 
   @PostMapping(value = "/update-ads", produces = "application/json; charset=utf-8")
-  public void save(Anuncio anuncio) {
+  public String save(
+      @RequestHeader String jwt,
+      @RequestBody Anuncio anuncio) {
+    String resultado = invokeRemoteRestService.checkJwt(jwt);
+    if (resultado.length() < 50)
+      return "{'resultado':false}".replace('\'', '\"');
     anuncioService.save(anuncio);
+    return "{'resultado':true}".replace('\'', '\"');
   }
-  
 }
 
-// public ProductoController(ProductoService productoService, LoginService loginService) {
-//         this.productoService = productoService;
-//         this.loginService = loginService;
-//     }
 
   
 

@@ -5,6 +5,7 @@ import java.util.List;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -23,7 +24,7 @@ public class PersonaController {
   }
 
   @GetMapping(value = "/get-persons-byid", produces = "application/json; charset=utf-8")
-  public Persona PersonaIndividual(@RequestParam int id) {
+  public Persona personaIndividual(@RequestParam int id) {
     return personaService.getPersonsByid(id);
   }
 
@@ -33,7 +34,7 @@ public class PersonaController {
   }
 
   @PostMapping(value = "/update-persons", produces = "application/json; charset=utf-8")
-  public void save(Persona persona) {
+  public void save(@RequestBody Persona persona) {
     personaService.save(persona);
   }
 

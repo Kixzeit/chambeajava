@@ -5,6 +5,7 @@ import java.util.List;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -25,8 +26,13 @@ public class GastoController {
     return this.gastoService.getAllPays();
   }
 
+  @GetMapping(value = "/get-allpays-byid", produces = "application/json; charset=utf-8")
+  public List<Gasto> listaTotalPorId(@RequestParam int id) {
+    return this.gastoService.getAllPaysByid(id);
+  }
+
   @GetMapping(value = "/get-pays-byid", produces = "application/json; charset=utf-8")
-  public Gasto GastoIndividual(@RequestParam int id) {
+  public Gasto gastoIndividual(@RequestParam int id) {
     return gastoService.getPayByid(id);
   }
 
@@ -36,7 +42,7 @@ public class GastoController {
   }
 
   @PostMapping(value = "/update-pays", produces = "application/json; charset=utf-8")
-  public void save(Gasto gasto) {
+  public void save(@RequestBody Gasto gasto) {
     gastoService.save(gasto);
   }
 }

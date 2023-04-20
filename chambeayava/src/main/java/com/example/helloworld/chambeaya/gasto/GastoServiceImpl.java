@@ -44,4 +44,9 @@ public class GastoServiceImpl implements GastoService {
     gastoMapper.delete(id);
   }
 
+  @Override
+  public List<Gasto> getAllPaysByid(int id) {
+    return gastoMapper.getPaysById(id);
+  }
+
 }
