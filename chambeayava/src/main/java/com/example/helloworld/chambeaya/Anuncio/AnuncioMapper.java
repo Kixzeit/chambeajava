@@ -4,39 +4,39 @@ import java.util.List;
 
 import org.apache.ibatis.annotations.Delete;
 import org.apache.ibatis.annotations.Insert;
+import org.apache.ibatis.annotations.Result;
 import org.apache.ibatis.annotations.ResultMap;
 import org.apache.ibatis.annotations.Results;
-import org.apache.ibatis.annotations.Result;
 import org.apache.ibatis.annotations.Select;
 import org.apache.ibatis.annotations.Update;
 import org.springframework.stereotype.Repository;
 
-import com.example.helloworld.chambeaya.Anuncio.model.Anuncio;
+import com.example.helloworld.anuncio.model.Anuncio;
 
 @Repository
 public interface AnuncioMapper {
-  @Results(id = "AnuncioMap", value = {
-      @Result(property = "idUser", column = "id_user"),
-      @Result(property = "nombreNegocio", column = "nombre_negocio"),
-      @Result(property = "descripcionPequeña", column = "descipcion_pequeña"),
-      @Result(property = "descripcionCompleta", column = "descripcion_completa"),
-      @Result(property = "codigoPostal", column = "codigo_postal"),
-      @Result(property = "telefonoNegocio", column = "telefono_negocio"),
-      @Result(property = "correoNegocio", column = "correo_negocio")
-  })
-  @Select("SELECT * FROM chambeaya")
-  public List<Anuncio> getAll();
+@Results(id = "AnuncioMap", value = {
+@Result(property = "idUser", column = "id_user"),
+@Result(property = "nombreNegocio", column = "nombre_negocio"),
+@Result(property = "descripcionPequeña", column = "descipcion_pequeña"),
+@Result(property = "descripcionCompleta", column = "descripcion_completa"),
+@Result(property = "codigoPostal", column = "codigo_postal"),
+@Result(property = "telefonoNegocio", column = "telefono_negocio"),
+@Result(property = "correoNegocio", column = "correo_negocio")
+})
+@Select("SELECT * FROM anuncio")
+public List<Anuncio> getAll();
 
-  @ResultMap("AnucioMap")
-  @Select("SELECT * FROM Anuncio WHERE id = #{id} ")
-  public Anuncio getById(int id);
+@ResultMap("AnuncioMap")
+@Select("SELECT * FROM anuncio WHERE id=#{id}")
+public Anuncio getById(int id);
 
-  @Insert("INSERT INTO Anuncio VALUES(#{id},#{idUser},#{nombreNegocio},#{descripcionPequeña},#{descripcionCompleta},#{codigoPostal},#{oficio},#{telefonoNegocio},#{correoNegocio}#{nickname})")
-  public void insert(Anuncio p);
+@Insert("INSERT INTO anuncio VALUES(#{id},#{idUser},#{nombreNegocio},#{descripcionPequeña},#{descripcionCompleta},#{codigoPostal},#{oficio},#{telefonoNegocio},#{correoNegocio})")
+public void insert(Anuncio p);
 
-  @Update("UPDATE Anuncio SET  id_user=#{id_user},nombre_negocio=#{nombre_negocio},descripcion_pequeña=#{descripcion_pequeña},descripcion_completa=#{descripcion_completa},codigo_postal=#{codigo_postal},oficio=#{oficio},telefono_negocio=#{telefono_negocio},correo_negocio=#{correo_negocio}nickname=#{nickname} WHERE id=#{id}")
-  public void update(Anuncio p);
+@Update("UPDATE anuncio SET id_user=#{idUser},nombre_negocio=#{nombreNegocio},descripcion_pequeña=#{descripcionPequeña},descripcion_completa=#{descripcionCompleta},codigo_postal=#{codigoPostal},oficio=#{oficio},telefono_negocio=#{telefonoNegocio},correo_negocio=#{correoNegocio} WHERE id=#{id}")
+public void update(Anuncio p);
 
-  @Delete("DELETE FROM Anuncio WHERE id=#{id}")
-  public void delete(int idUSer);
+@Delete("DELETE FROM anuncio WHERE id=#{id}")
+public void delete(int id);
 }
