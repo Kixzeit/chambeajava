@@ -22,6 +22,7 @@ public class TarjetaServiceImpl implements TarjetaService {
     return tarjetaMapper.getAll();
   }
 
+
   @Override
   public Tarjeta getCardByid(int id) {
     return tarjetaMapper.getById(id);
@@ -44,4 +45,8 @@ public class TarjetaServiceImpl implements TarjetaService {
     tarjetaMapper.delete(id);
   }
 
+  @Override
+  public List<Tarjeta> getAllCardsByid(int id) {
+    return tarjetaMapper.getCardsById(id);
+  }
 }

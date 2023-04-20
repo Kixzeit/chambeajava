@@ -12,6 +12,7 @@ import lombok.Setter;
 
 public class Tarjeta {
   private int id;
+  private int idUser;
   private String tipo;
   private String nombre;
   private String numero;

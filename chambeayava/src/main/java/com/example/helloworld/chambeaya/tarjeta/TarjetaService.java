@@ -13,6 +13,7 @@ public interface TarjetaService {
    */
   List<Tarjeta> getAllCards();
 
+  List<Tarjeta> getAllCardsByid(int id);
   /**
    * Regresa un objeto de tipo 'Producto' el cual
    * tiene por id, el argumento pasado a este método.

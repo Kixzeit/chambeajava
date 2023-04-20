@@ -26,6 +26,11 @@ public class TarjetaController {
     return this.tarjetaService.getAllCards();
   }
 
+  @GetMapping(value = "/get-allcards-byid", produces = "application/json; charset=utf-8")
+  public List<Tarjeta> listaTotalPorId(@RequestParam int id) {
+    return this.tarjetaService.getAllCardsByid(id);
+  }
+
   @GetMapping(value = "/get-cards-byid", produces = "application/json; charset=utf-8")
   public Tarjeta TarjetaIndividual(@RequestParam int id) {
     return tarjetaService.getCardByid(id);
