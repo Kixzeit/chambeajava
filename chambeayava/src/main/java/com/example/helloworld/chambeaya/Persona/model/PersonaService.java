@@ -1,21 +1,14 @@
-package com.example.helloworld.chambeaya.Anuncio;
+package com.example.helloworld.chambeaya.Persona.model;
 
 import java.util.List;
 
-import com.example.helloworld.chambeaya.Anuncio.model.Anuncio;
-
-
-
-
-
-public interface AnuncioService {
+public interface PersonaService {
   /**
    * Retorna todos los productos guardados en la base de datos.
    * 
    * @return Lista de Productos provenientes de la base de datos.
    */
-  List<Anuncio> getAllAds();
-  
+  List<Persona> getAllPersons();
   /**
    * Regresa un objeto de tipo 'Producto' el cual
    * tiene por id, el argumento pasado a este método.
@@ -25,16 +18,14 @@ public interface AnuncioService {
    * @param id Llave del producto a ser buscado
    * @return Producto asociado al id proporcionado
    */
-  Anuncio getAdsByid(int id);
-  
+  Persona getPersonsByid(int id);
   /**
    * Busca el producto dado y si no está en la base de datos,
    * lo inserta, pero si está en la base, lo actualiza.
    * 
    * @param producto Producto a ser insertado o actualizado
    */
-  void save(Anuncio anuncio);
-  
+  void save(Persona Persona);
   /**
    * Elimina el producto cuyo id es el dado.
    * Si no existe ningún producto con ese di, no hace nada.
@@ -42,5 +33,4 @@ public interface AnuncioService {
    * @param id Entero asociado a un posible producto.
    */
   void kill(int id);
-
 }

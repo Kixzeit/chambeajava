@@ -11,7 +11,9 @@ import org.apache.ibatis.annotations.Select;
 import org.apache.ibatis.annotations.Update;
 import org.springframework.stereotype.Repository;
 
-import com.example.helloworld.anuncio.model.Anuncio;
+import com.example.helloworld.chambeaya.Anuncio.model.Anuncio;
+
+
 
 @Repository
 public interface AnuncioMapper {

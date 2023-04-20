@@ -7,15 +7,15 @@ import org.springframework.stereotype.Service;
 
 @Primary
 @Service(value = "primeraImplementacionYYY")
-public class PersonaServiceImpl2 implements PersonaService {
-    private PersonaMapper personaMapper;
+public class PersonassServiceImpl2 implements PersonassService {
+    private PersonassMapper personaMapper;
     
-    public PersonaServiceImpl2(PersonaMapper personaMapper) {
+    public PersonassServiceImpl2(PersonassMapper personaMapper) {
         this.personaMapper = personaMapper;
     }
     
-    public Persona calcula(String ua, String col, String v1, String v2, String v3) {
-        Persona p = personaMapper.getById(2233);
+    public Personass calcula(String ua, String col, String v1, String v2, String v3) {
+        Personass p = personaMapper.getById(2233);
         float nuevo = 2*p.getSueldo();
         if(nuevo>150) {
             p.setNombre("super adinerado");
@@ -27,7 +27,7 @@ public class PersonaServiceImpl2 implements PersonaService {
         return p;
     }
     @Override
-    public List<Persona> getAll() {
+    public List<Personass> getAll() {
         return personaMapper.getAll();
     }
 

@@ -1,4 +1,4 @@
-package com.example.helloworld.anuncio.model;
+package com.example.helloworld.chambeaya.Anuncio.model;
 
 // import java.util.List;
 

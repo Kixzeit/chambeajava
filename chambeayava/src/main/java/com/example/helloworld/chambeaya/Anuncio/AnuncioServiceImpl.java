@@ -5,7 +5,9 @@ import java.util.List;
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Service;
 
-import com.example.helloworld.anuncio.model.Anuncio;
+import com.example.helloworld.chambeaya.Anuncio.model.Anuncio;
+
+
 
 @Primary
 @Service

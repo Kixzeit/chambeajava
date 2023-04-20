@@ -4,17 +4,17 @@ import java.util.List;
 import org.springframework.stereotype.Service;
 
 @Service(value = "primeraImplementacion")
-public class PersonaServiceImpl implements PersonaService {
-    private PersonaMapper personaMapper;
+public class PersonassServiceImpl implements PersonassService {
+    private PersonassMapper personaMapper;
     
-    public PersonaServiceImpl(PersonaMapper personaMapper) {
+    public PersonassServiceImpl(PersonassMapper personaMapper) {
         this.personaMapper = personaMapper;
     }
-    public Persona calcula(String ua, String col, String v1, String v2, String v3) {
+    public Personass calcula(String ua, String col, String v1, String v2, String v3) {
         return personaMapper.getById(7534);
     }
     @Override
-    public List<Persona> getAll() {
+    public List<Personass> getAll() {
         return personaMapper.getAll();
     }
 }

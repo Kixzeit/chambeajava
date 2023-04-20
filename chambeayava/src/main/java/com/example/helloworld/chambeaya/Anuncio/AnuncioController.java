@@ -9,7 +9,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.example.helloworld.anuncio.model.Anuncio;
+import com.example.helloworld.chambeaya.Anuncio.model.Anuncio;
+
+
 //import com.example.helloworld.anuncio.model.ResultRequest;
 
 
