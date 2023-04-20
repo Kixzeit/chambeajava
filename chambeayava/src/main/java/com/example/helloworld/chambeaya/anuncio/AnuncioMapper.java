@@ -1,4 +1,4 @@
-package com.example.helloworld.chambeaya.Anuncio;
+package com.example.helloworld.chambeaya.anuncio;
 
 import java.util.List;
 
@@ -11,7 +11,7 @@ import org.apache.ibatis.annotations.Select;
 import org.apache.ibatis.annotations.Update;
 import org.springframework.stereotype.Repository;
 
-import com.example.helloworld.chambeaya.Anuncio.model.Anuncio;
+import com.example.helloworld.chambeaya.anuncio.model.Anuncio;
 
 
 

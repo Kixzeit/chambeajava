@@ -1,4 +1,4 @@
-package com.example.helloworld.chambeaya.Anuncio;
+package com.example.helloworld.chambeaya.anuncio;
 
 import java.util.List;
 
@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.example.helloworld.chambeaya.Anuncio.model.Anuncio;
+import com.example.helloworld.chambeaya.anuncio.model.Anuncio;
 
 
 //import com.example.helloworld.anuncio.model.ResultRequest;

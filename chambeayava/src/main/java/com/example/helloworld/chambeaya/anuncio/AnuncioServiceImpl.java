@@ -1,11 +1,11 @@
-package com.example.helloworld.chambeaya.Anuncio;
+package com.example.helloworld.chambeaya.anuncio;
 
 import java.util.List;
 
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Service;
 
-import com.example.helloworld.chambeaya.Anuncio.model.Anuncio;
+import com.example.helloworld.chambeaya.anuncio.model.Anuncio;
 
 
 
