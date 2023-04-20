@@ -30,3 +30,4 @@ public interface GastoMapper{
   @Delete("DELETE FROM gasto WHERE id=#{id}")
   public void delete(int id);
 }
+
