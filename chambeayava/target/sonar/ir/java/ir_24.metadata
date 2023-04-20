@@ -1,0 +1,3 @@
+com.example.helloworld.chambeaya.tarjeta.TarjetaServiceImpl#save(Lcom/example/helloworld/chambeaya/tarjeta/model/Tarjeta;)V
+==
+getCardByid com.example.helloworld.chambeaya.tarjeta.TarjetaServiceImpl#getCardByid(I)Lcom/example/helloworld/chambeaya/tarjeta/model/Tarjeta;

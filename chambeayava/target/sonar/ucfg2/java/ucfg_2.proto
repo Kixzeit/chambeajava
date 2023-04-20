@@ -1,0 +1,27 @@
+
+‡com.example.helloworld.chambeaya.anuncio.AnuncioController#anuncioIndividual(I)Lcom/example/helloworld/chambeaya/anuncio/model/Anuncio;Ž
+ƒ/home/ubuntu/development/code/chambeajava/chambeayava/src/main/java/com/example/helloworld/chambeaya/anuncio/AnuncioController.java" "(""1*û
+1# #(Â
+¿
+# #(=
+%07com.example.helloworld.chambeaya.anuncio.AnuncioService"__id*n
+
+__unknown_file (R*P<
+:com.example.helloworld.chambeaya.anuncio.AnuncioController"
+anuncioServiceÚ×
+# #((<
+%16com.example.helloworld.chambeaya.anuncio.model.Anuncio"}com.example.helloworld.chambeaya.anuncio.AnuncioService#getAdsByid(I)Lcom/example/helloworld/chambeaya/anuncio/model/Anuncio;*[
+
+__unknown_file (?
+=
+%07com.example.helloworld.chambeaya.anuncio.AnuncioService*"
+
+__unknown_file (
+""2getAdsByid(I)"J
+# #()>
+<
+%16com.example.helloworld.chambeaya.anuncio.model.Anuncio: 
+
+__unknown_file (
+""B><
+:com.example.helloworld.chambeaya.anuncio.AnuncioControllerH

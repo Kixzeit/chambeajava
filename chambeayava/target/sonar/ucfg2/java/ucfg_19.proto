@@ -1,0 +1,27 @@
+
+]com.example.helloworld.chambeaya.tarjeta.TarjetaController#listaTotalPorId(I)Ljava/util/List;é
+É/home/ubuntu/development/code/chambeajava/chambeayava/src/main/java/com/example/helloworld/chambeaya/tarjeta/TarjetaController.java (&"1*ç
+1   (¬
+ø
+   (=
+%07com.example.helloworld.chambeaya.tarjeta.TarjetaService"__id*n
+
+__unknown_file (R*P<
+:com.example.helloworld.chambeaya.tarjeta.TarjetaController"
+tarjetaServiceîë
+   (2
+%1java.util.List"Zcom.example.helloworld.chambeaya.tarjeta.TarjetaService#getAllCardsByid(I)Ljava/util/List;*[
+
+__unknown_file (?
+=
+%07com.example.helloworld.chambeaya.tarjeta.TarjetaService*"
+
+__unknown_file (
+""2getAllCardsByid(I)""
+   (3
+
+%1java.util.List: 
+
+__unknown_file (
+""B><
+:com.example.helloworld.chambeaya.tarjeta.TarjetaControllerH

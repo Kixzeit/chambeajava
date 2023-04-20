@@ -1,0 +1,7 @@
+organization=chambeaya-mx
+projectKey=kix-mx-chambeaya
+serverUrl=https://sonarcloud.io
+serverVersion=8.0.0.40165
+dashboardUrl=https://sonarcloud.io/dashboard?id=kix-mx-chambeaya
+ceTaskId=AYegXhUh9QLvra-603PP
+ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AYegXhUh9QLvra-603PP

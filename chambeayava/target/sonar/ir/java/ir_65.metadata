@@ -1,0 +1,3 @@
+com.example.helloworld.chambeaya.gasto.GastoServiceImpl#save(Lcom/example/helloworld/chambeaya/gasto/model/Gasto;)V
+==
+getPayByid com.example.helloworld.chambeaya.gasto.GastoServiceImpl#getPayByid(I)Lcom/example/helloworld/chambeaya/gasto/model/Gasto;

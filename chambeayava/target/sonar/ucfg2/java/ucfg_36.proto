@@ -1,0 +1,27 @@
+
+}com.example.helloworld.chambeaya.gasto.GastoController#gastoIndividual(I)Lcom/example/helloworld/chambeaya/gasto/model/Gasto;‰
+/home/ubuntu/development/code/chambeajava/chambeayava/src/main/java/com/example/helloworld/chambeaya/gasto/GastoController.java# #("1*Ý
+1$ $(¸
+µ
+$ $(9
+%03com.example.helloworld.chambeaya.gasto.GastoService"__id*h
+
+__unknown_file (L*J8
+6com.example.helloworld.chambeaya.gasto.GastoController"
+gastoServiceÊÇ
+$ $(&8
+%12com.example.helloworld.chambeaya.gasto.model.Gasto"ucom.example.helloworld.chambeaya.gasto.GastoService#getPayByid(I)Lcom/example/helloworld/chambeaya/gasto/model/Gasto;*W
+
+__unknown_file (;
+9
+%03com.example.helloworld.chambeaya.gasto.GastoService*"
+
+__unknown_file (
+""2getPayByid(I)"F
+$ $(':
+8
+%12com.example.helloworld.chambeaya.gasto.model.Gasto: 
+
+__unknown_file (
+""B:8
+6com.example.helloworld.chambeaya.gasto.GastoControllerH

@@ -1,0 +1,21 @@
+
+Scom.example.helloworld.chambeaya.gasto.GastoController#listaTotal()Ljava/util/List;‰
+/home/ubuntu/development/code/chambeajava/chambeayava/src/main/java/com/example/helloworld/chambeaya/gasto/GastoController.java ("1*Ë
+1 (¸
+µ
+ (9
+%03com.example.helloworld.chambeaya.gasto.GastoService"__id*h
+
+__unknown_file (L*J8
+6com.example.helloworld.chambeaya.gasto.GastoController"
+gastoServiceÜÙ
+ ()
+%1java.util.List"Pcom.example.helloworld.chambeaya.gasto.GastoService#getAllPays()Ljava/util/List;*W
+
+__unknown_file (;
+9
+%03com.example.helloworld.chambeaya.gasto.GastoService2getAllPays()""
+ (*
+
+%1java.util.ListB:8
+6com.example.helloworld.chambeaya.gasto.GastoControllerH

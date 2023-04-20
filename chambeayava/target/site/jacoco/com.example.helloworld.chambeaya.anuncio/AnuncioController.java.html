@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>AnuncioController.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">spring-boot-2-hello-world</a> &gt; <a href="index.source.html" class="el_package">com.example.helloworld.chambeaya.anuncio</a> &gt; <span class="el_source">AnuncioController.java</span></div><h1>AnuncioController.java</h1><pre class="source lang-java linenums">package com.example.helloworld.chambeaya.anuncio;
+
+import java.util.List;
+
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestHeader;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.example.helloworld.chambeaya.anuncio.model.Anuncio;
+import com.example.helloworld.chambeaya.invoke.InvokeRemoteRestService;
+
+@RestController
+@RequestMapping(value = &quot;/api&quot;)
+public class AnuncioController {
+  private AnuncioService anuncioService;
+  private InvokeRemoteRestService invokeRemoteRestService;
+
+<span class="nc" id="L23">  public AnuncioController(AnuncioService anuncioService,InvokeRemoteRestService invokeRemoteRestService) {</span>
+<span class="nc" id="L24">    this.anuncioService = anuncioService;</span>
+<span class="nc" id="L25">    this.invokeRemoteRestService = invokeRemoteRestService;</span>
+<span class="nc" id="L26">  }</span>
+
+  @GetMapping(value = &quot;/get-ads&quot;, produces = &quot;application/json; charset=utf-8&quot;)
+  public List&lt;Anuncio&gt; listaTotal() {
+<span class="nc" id="L30">    return this.anuncioService.getAllAds();</span>
+  }
+
+  @GetMapping(value = &quot;/get-ads-byid&quot;, produces = &quot;application/json; charset=utf-8&quot;)
+  public Anuncio anuncioIndividual(@RequestParam int id) {
+<span class="nc" id="L35">    return anuncioService.getAdsByid(id);</span>
+  }
+
+  @DeleteMapping(value = &quot;/delete-ads-byid&quot;, produces = &quot;application/json; charset=utf-8&quot;)
+  public void borra(int id) {
+<span class="nc" id="L40">    anuncioService.kill(id);</span>
+<span class="nc" id="L41">  }</span>
+
+  @PostMapping(value = &quot;/update-ads&quot;, produces = &quot;application/json; charset=utf-8&quot;)
+  public String save(
+      @RequestHeader String jwt,
+      @RequestBody Anuncio anuncio) {
+<span class="nc" id="L47">    String resultado = invokeRemoteRestService.checkJwt(jwt);</span>
+<span class="nc bnc" id="L48" title="All 2 branches missed.">    if (resultado.length() &lt; 50)</span>
+<span class="nc" id="L49">      return &quot;{'resultado':false}&quot;.replace('\'', '\&quot;');</span>
+<span class="nc" id="L50">    anuncioService.save(anuncio);</span>
+<span class="nc" id="L51">    return &quot;{'resultado':true}&quot;.replace('\'', '\&quot;');</span>
+  }
+}
+
+
+  
+
+  // @GetMapping(value = &quot;/dameProducto&quot;, produces = &quot;application/json; charset=utf-8&quot;)
+  // public ResultadoConsulta listaTotal(int id) {
+  //   return this.productoService.getBigResult(id);
+  // }
+
+  // @GetMapping(value= &quot;/get-ads-byid&quot;, produces = &quot;application/json;
+  // charset=utf-8&quot;)
+  // public Anuncio
+
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.8.202204050719</span></div></body></html>
