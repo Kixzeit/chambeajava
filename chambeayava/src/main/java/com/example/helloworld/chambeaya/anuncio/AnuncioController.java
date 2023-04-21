@@ -2,8 +2,11 @@ package com.example.helloworld.chambeaya.anuncio;
 
 import java.util.List;
 
+import javax.websocket.server.PathParam;
+
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestHeader;
@@ -30,8 +33,8 @@ public class AnuncioController {
     return this.anuncioService.getAllAds();
   }
 
-  @GetMapping(value = "/get-ads-byid", produces = "application/json; charset=utf-8")
-  public Anuncio anuncioIndividual(@RequestParam int id) {
+  @GetMapping(value = "/get-ads-byid/{id}", produces = "application/json; charset=utf-8")
+  public Anuncio anuncioIndividual(@PathVariable int id) {
     return anuncioService.getAdsByid(id);
   }
 
@@ -42,6 +45,7 @@ public class AnuncioController {
 
   @PostMapping(value = "/update-ads", produces = "application/json; charset=utf-8")
   public String save(
+      @RequestHeader int idUser,
       @RequestHeader String jwt,
       @RequestBody Anuncio anuncio) {
     String resultado = invokeRemoteRestService.checkJwt(jwt);

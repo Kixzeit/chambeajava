@@ -16,7 +16,8 @@ public interface PersonaMapper {
       @Result(property = "apPaterno", column = "ap_paterno"),
       @Result(property = "apMaterno", column = "ap_materno"),
       @Result(property = "fechaNacimiento", column = "fecha_nacimiento"),
-      @Result(property = "codigoPostal", column = "codigo_postal")
+      @Result(property = "codigoPostal", column = "codigo_postal"),
+      @Result(property = "idUser", column = "id_user")
   })
   @Select("SELECT * FROM persona")
   public List<Persona> getAllPersons();
@@ -28,7 +29,7 @@ public interface PersonaMapper {
   @Insert("INSERT INTO persona VALUES(#{id},#{nombre},#{apPaterno},#{apMaterno},#{telefono},#{correo},#{fechaNacimiento},#{estado},#{municipio},#{colonia},#{codigoPostal})")
   public void insert(Persona p);
 
-  @Update("UPDATE persona SET nombre=#{nombre},ap_paterno=#{apPaterno},ap_materno=#{apMaterno},telefono=#{telefono},correo=#{correo},fecha_nacimiento=#{fechaNacimiento},estado=#{estado},municipio=#{municipio},colonia=#{colonia},codigo_postal=#{codigoPostal} WHERE id=#{id}")
+  @Update("UPDATE persona SET nombre=#{nombre},ap_paterno=#{apPaterno},ap_materno=#{apMaterno},telefono=#{telefono},correo=#{correo},fecha_nacimiento=#{fechaNacimiento},estado=#{estado},municipio=#{municipio},colonia=#{colonia},codigo_postal=#{codigoPostal} WHERE id_user=#{idUser}")
   public void update(Persona p);
 
   @Delete("DELETE FROM persona WHERE id=#{id}")

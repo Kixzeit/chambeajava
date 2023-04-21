@@ -36,7 +36,7 @@ public Anuncio getById(int id);
 @Insert("INSERT INTO anuncio VALUES(#{id},#{idUser},#{nombreNegocio},#{descripcionPequeña},#{descripcionCompleta},#{codigoPostal},#{oficio},#{telefonoNegocio},#{correoNegocio})")
 public void insert(Anuncio p);
 
-@Update("UPDATE anuncio SET id_user=#{idUser},nombre_negocio=#{nombreNegocio},descripcion_pequeña=#{descripcionPequeña},descripcion_completa=#{descripcionCompleta},codigo_postal=#{codigoPostal},oficio=#{oficio},telefono_negocio=#{telefonoNegocio},correo_negocio=#{correoNegocio} WHERE id=#{id}")
+@Update("UPDATE anuncio SET id_user=#{idUser},nombre_negocio=#{nombreNegocio},descripcion_pequeña=#{descripcionPequeña},descripcion_completa=#{descripcionCompleta},codigo_postal=#{codigoPostal},oficio=#{oficio},telefono_negocio=#{telefonoNegocio},correo_negocio=#{correoNegocio} WHERE id_user=#{idUser}")
 public void update(Anuncio p);
 
 @Delete("DELETE FROM anuncio WHERE id=#{id}")

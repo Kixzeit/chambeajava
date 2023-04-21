@@ -2,8 +2,11 @@ package com.example.helloworld.chambeaya.gasto;
 
 import java.util.List;
 
+import javax.websocket.server.PathParam;
+
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -26,8 +29,8 @@ public class GastoController {
     return this.gastoService.getAllPays();
   }
 
-  @GetMapping(value = "/get-allpays-byid", produces = "application/json; charset=utf-8")
-  public List<Gasto> listaTotalPorId(@RequestParam int id) {
+  @GetMapping(value = "/get-allpays-byid/{id}", produces = "application/json; charset=utf-8")
+  public List<Gasto> listaTotalPorId(@PathVariable int id) {
     return this.gastoService.getAllPaysByid(id);
   }
 
