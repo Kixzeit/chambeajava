@@ -26,10 +26,10 @@ public interface PersonaMapper {
   @Select("SELECT * FROM persona WHERE id=#{id}")
   public Persona getById(int id);
 
-  @Insert("INSERT INTO persona VALUES(#{id},#{nombre},#{apPaterno},#{apMaterno},#{telefono},#{correo},#{fechaNacimiento},#{estado},#{municipio},#{colonia},#{codigoPostal})")
+  @Insert("INSERT INTO persona VALUES(#{id},#{nombre},#{apPaterno},#{apMaterno},#{telefono},#{fechaNacimiento},#{estado},#{municipio},#{colonia},#{codigoPostal})")
   public void insert(Persona p);
 
-  @Update("UPDATE persona SET nombre=#{nombre},ap_paterno=#{apPaterno},ap_materno=#{apMaterno},telefono=#{telefono},correo=#{correo},fecha_nacimiento=#{fechaNacimiento},estado=#{estado},municipio=#{municipio},colonia=#{colonia},codigo_postal=#{codigoPostal} WHERE id_user=#{idUser}")
+  @Update("UPDATE persona SET nombre=#{nombre},ap_paterno=#{apPaterno},ap_materno=#{apMaterno},telefono=#{telefono},fecha_nacimiento=#{fechaNacimiento},estado=#{estado},municipio=#{municipio},colonia=#{colonia},codigo_postal=#{codigoPostal} WHERE id=#{id}")
   public void update(Persona p);
 
   @Delete("DELETE FROM persona WHERE id=#{id}")

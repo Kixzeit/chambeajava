@@ -25,7 +25,7 @@ public interface PersonaService {
    * 
    * @param producto Producto a ser insertado o actualizado
    */
-  void save(Persona Persona);
+  void save(Persona persona);
   /**
    * Elimina el producto cuyo id es el dado.
    * Si no existe ningún producto con ese di, no hace nada.

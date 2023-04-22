@@ -16,6 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.example.helloworld.chambeaya.anuncio.model.Anuncio;
 import com.example.helloworld.chambeaya.invoke.InvokeRemoteRestService;
+import com.example.helloworld.chambeaya.invoke.JwtBody;
 
 @RestController
 @RequestMapping(value = "/api")
@@ -48,9 +49,9 @@ public class AnuncioController {
       @RequestHeader int idUser,
       @RequestHeader String jwt,
       @RequestBody Anuncio anuncio) {
-    String resultado = invokeRemoteRestService.checkJwt(jwt);
-    if (resultado.length() < 50)
-      return "{'resultado':false}".replace('\'', '\"');
+    JwtBody resultado = invokeRemoteRestService.checkJwt(jwt);
+    if (resultado.getUserId() < 0) return "{'resultado':false}".replace('\'', '\"');
+
     anuncioService.save(anuncio);
     return "{'resultado':true}".replace('\'', '\"');
   }
