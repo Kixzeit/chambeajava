@@ -15,7 +15,6 @@ public interface AnuncioService {
    * @return Lista de Productos provenientes de la base de datos.
    */
   List<Anuncio> getAllAds();
-  
   /**
    * Regresa un objeto de tipo 'Producto' el cual
    * tiene por id, el argumento pasado a este método.
@@ -42,5 +41,7 @@ public interface AnuncioService {
    * @param id Entero asociado a un posible producto.
    */
   void kill(int id);
+
+  List<Anuncio> getAllAdsByOficce(String oficio);
 
 }

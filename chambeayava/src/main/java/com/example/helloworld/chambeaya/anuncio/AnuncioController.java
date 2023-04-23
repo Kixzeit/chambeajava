@@ -2,7 +2,6 @@ package com.example.helloworld.chambeaya.anuncio;
 
 import java.util.List;
 
-import javax.websocket.server.PathParam;
 
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -11,7 +10,6 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.example.helloworld.chambeaya.anuncio.model.Anuncio;
@@ -33,6 +31,24 @@ public class AnuncioController {
   public List<Anuncio> listaTotal() {
     return this.anuncioService.getAllAds();
   }
+
+  @GetMapping(value = "/get-allads-byoficce/{oficio}", produces = "application/json; charset=utf-8")
+  public List<Anuncio> listaTotalPorOficio(@PathVariable String oficio) {
+    return this.anuncioService.getAllAdsByOficce(oficio);
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   @GetMapping(value = "/get-ads-byid/{id}", produces = "application/json; charset=utf-8")
   public Anuncio anuncioIndividual(@PathVariable int id) {
@@ -57,15 +73,4 @@ public class AnuncioController {
   }
 }
 
-
-  
-
-  // @GetMapping(value = "/dameProducto", produces = "application/json; charset=utf-8")
-  // public ResultadoConsulta listaTotal(int id) {
-  //   return this.productoService.getBigResult(id);
-  // }
-
-  // @GetMapping(value= "/get-ads-byid", produces = "application/json;
-  // charset=utf-8")
-  // public Anuncio
 

@@ -41,4 +41,8 @@ public void update(Anuncio p);
 
 @Delete("DELETE FROM anuncio WHERE id=#{id}")
 public void delete(int id);
+
+@ResultMap("AnuncioMap")
+@Select("SELECT * FROM anuncio WHERE oficio=#{oficio}")
+public List<Anuncio> getAdsByOficce(String oficio);
 }

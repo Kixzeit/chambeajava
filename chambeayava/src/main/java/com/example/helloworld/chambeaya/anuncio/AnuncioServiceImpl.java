@@ -21,7 +21,7 @@ this.anuncioMapper = anuncioMapper;
 
 @Override
 public List<Anuncio> getAllAds() {
-return anuncioMapper.getAll();
+  return anuncioMapper.getAll();
 }
 
 @Override
@@ -40,10 +40,13 @@ public void save(Anuncio anuncio) {
     anuncioMapper.update(anuncio);
   }
 }
-
 @Override
 public void kill(int id) {
   anuncioMapper.delete(id);
 }
 
+@Override
+public List<Anuncio> getAllAdsByOficce(String oficio) {
+  return anuncioMapper.getAdsByOficce(oficio);
+}
 }
