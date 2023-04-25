@@ -19,6 +19,7 @@ public class Tarjeta {
   private String mes;
   private String anio;
   private String cvv;
+  private String company;
 }
 
 

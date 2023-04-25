@@ -32,10 +32,10 @@ public interface TarjetaMapper {
   @Select("SELECT * FROM tarjeta WHERE id=#{id}")
   public Tarjeta getById(int id);
 
-  @Insert("INSERT INTO tarjeta VALUES(#{id},#{idUser},#{tipo},#{nombre},#{numero},#{mes},#{anio},#{cvv})")
+  @Insert("INSERT INTO tarjeta VALUES(#{id},#{idUser},#{tipo},#{nombre},#{numero},#{mes},#{anio},#{cvv},#{company})")
   public void insert(Tarjeta p);
 
-  @Update("UPDATE tarjeta SET id_user=#{idUser},tipo=#{tipo},nombre=#{nombre},numero=#{numero},mes=#{mes},anio=#{anio},cvv=#{cvv} WHERE id=#{id}")
+  @Update("UPDATE tarjeta SET id_user=#{idUser},tipo=#{tipo},nombre=#{nombre},numero=#{numero},mes=#{mes},anio=#{anio},cvv=#{cvv},company=#{company} WHERE id=#{id}")
   public void update(Tarjeta p);
 
   @Delete("DELETE FROM tarjeta WHERE id=#{id}")
