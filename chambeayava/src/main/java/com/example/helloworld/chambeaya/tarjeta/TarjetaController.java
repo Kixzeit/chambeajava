@@ -6,10 +6,13 @@ import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.example.helloworld.chambeaya.invoke.InvokeRemoteRestService;
+import com.example.helloworld.chambeaya.invoke.JwtBody;
 import com.example.helloworld.chambeaya.tarjeta.model.Tarjeta;
 
 
@@ -17,9 +20,11 @@ import com.example.helloworld.chambeaya.tarjeta.model.Tarjeta;
 @RequestMapping(value = "/api")
 public class TarjetaController {
   private TarjetaService tarjetaService;
+  private InvokeRemoteRestService invokeRemoteRestService;  
 
-  public TarjetaController(TarjetaService tarjetaService) {
+  public TarjetaController(TarjetaService tarjetaService,InvokeRemoteRestService invokeRemoteRestService) {
     this.tarjetaService = tarjetaService;
+    this.invokeRemoteRestService = invokeRemoteRestService;
   }
 
   @GetMapping(value = "/get-cards", produces = "application/json; charset=utf-8")
@@ -40,13 +45,22 @@ public class TarjetaController {
   }
 
   @DeleteMapping(value = "/delete-cards-byid", produces = "application/json; charset=utf-8")
-  public void borra(int id) {
+  public String borra(int id, @RequestHeader String jwt) {
+    JwtBody resultado = invokeRemoteRestService.checkJwt(jwt);
+    if (resultado.getUserId() < 0)
+      return "{'resultado':false}".replace('\'', '\"');
+
     tarjetaService.kill(id);
+    return "{'resultado':true}".replace('\'', '\"');
   }
 
   @PostMapping(value = "/update-cards", produces = "application/json; charset=utf-8")
-  public void save(@RequestBody Tarjeta tarjeta) {
+  public String save(@RequestBody Tarjeta tarjeta, @RequestHeader String jwt) {
+    JwtBody resultado = invokeRemoteRestService.checkJwt(jwt);
+    if (resultado.getUserId() < 0) return "{'resultado':false}".replace('\'', '\"');
+
     tarjetaService.save(tarjeta);
+    return "{'resultado':true}".replace('\'', '\"');
   }
 
 }

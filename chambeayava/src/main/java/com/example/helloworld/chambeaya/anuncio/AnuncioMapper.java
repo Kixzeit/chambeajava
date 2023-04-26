@@ -20,7 +20,7 @@ public interface AnuncioMapper {
 @Results(id = "AnuncioMap", value = {
 @Result(property = "idUser", column = "id_user"),
 @Result(property = "nombreNegocio", column = "nombre_negocio"),
-@Result(property = "descripcionPequeña", column = "descipcion_pequeña"),
+@Result(property = "descripcionPequeña", column = "descripcion_pequeña"),
 @Result(property = "descripcionCompleta", column = "descripcion_completa"),
 @Result(property = "codigoPostal", column = "codigo_postal"),
 @Result(property = "telefonoNegocio", column = "telefono_negocio"),
@@ -36,7 +36,7 @@ public Anuncio getById(int id);
 @Insert("INSERT INTO anuncio VALUES(#{id},#{idUser},#{nombreNegocio},#{descripcionPequeña},#{descripcionCompleta},#{codigoPostal},#{oficio},#{telefonoNegocio},#{correoNegocio})")
 public void insert(Anuncio p);
 
-@Update("UPDATE anuncio SET id_user=#{idUser},nombre_negocio=#{nombreNegocio},descripcion_pequeña=#{descripcionPequeña},descripcion_completa=#{descripcionCompleta},codigo_postal=#{codigoPostal},oficio=#{oficio},telefono_negocio=#{telefonoNegocio},correo_negocio=#{correoNegocio} WHERE id_user=#{idUser}")
+@Update("UPDATE anuncio SET id_user=#{idUser},nombre_negocio=#{nombreNegocio},descripcion_pequeña=#{descripcionPequeña},descripcion_completa=#{descripcionCompleta},codigo_postal=#{codigoPostal},oficio=#{oficio},telefono_negocio=#{telefonoNegocio},correo_negocio=#{correoNegocio} WHERE id=#{id}")
 public void update(Anuncio p);
 
 @Delete("DELETE FROM anuncio WHERE id=#{id}")

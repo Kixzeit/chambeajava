@@ -37,27 +37,19 @@ public class AnuncioController {
     return this.anuncioService.getAllAdsByOficce(oficio);
   }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
   @GetMapping(value = "/get-ads-byid/{id}", produces = "application/json; charset=utf-8")
   public Anuncio anuncioIndividual(@PathVariable int id) {
     return anuncioService.getAdsByid(id);
   }
 
   @DeleteMapping(value = "/delete-ads-byid", produces = "application/json; charset=utf-8")
-  public void borra(int id) {
+  public String borra(
+  @RequestHeader String jwt , 
+  int id) {
+    JwtBody resultado = invokeRemoteRestService.checkJwt(jwt);
+    if (resultado.getUserId() < 0) return "{'resultado':false}".replace('\'', '\"');
     anuncioService.kill(id);
+    return "{'resultado':true}".replace('\'', '\"');
   }
 
   @PostMapping(value = "/update-ads", produces = "application/json; charset=utf-8")
