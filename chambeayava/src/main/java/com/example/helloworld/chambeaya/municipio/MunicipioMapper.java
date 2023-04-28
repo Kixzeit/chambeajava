@@ -12,6 +12,6 @@ public interface MunicipioMapper {
   @Select("SELECT * FROM municipios WHERE id = #{id} ")
   public Municipio getById(int id);
 
-  @Select("SELECT * FROM municipios WHERE estado=#{estado}")
-  public List<Municipio> getMuniByEstado(int estado);
+  @Select("SELECT * FROM municipios WHERE id=#{id}")
+  public List<Municipio> getMuniByEstado(int id);
 }

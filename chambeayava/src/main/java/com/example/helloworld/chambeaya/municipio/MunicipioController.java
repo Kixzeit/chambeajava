@@ -16,8 +16,8 @@ public class MunicipioController {
   }
 
   @GetMapping(value = "/obten-municipios", produces = "application/json; charset=utf-8")
-  public List<Municipio> listaTotalPorEstado(@RequestParam int estado) {
-    return this.municipioService.getAllMuni(estado);
+  public List<Municipio> listaTotalPorEstado(@RequestParam int id) {
+    return this.municipioService.getAllMuni(id);
   }
 
 }
