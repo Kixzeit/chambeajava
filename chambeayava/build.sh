@@ -1,1 +1,1 @@
-docker build . -t ghcr.io/kixzeit/dockerized-examen
+docker build . -t ghcr.io/kixzeit/dockerized-chambeaya

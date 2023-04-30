@@ -1,7 +1,7 @@
 package com.example.helloworld.chambeaya.anuncio;
 
 import java.util.List;
-
+import java.util.stream.Collectors;
 
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -22,7 +22,7 @@ public class AnuncioController {
   private AnuncioService anuncioService;
   private InvokeRemoteRestService invokeRemoteRestService;
 
-  public AnuncioController(AnuncioService anuncioService,InvokeRemoteRestService invokeRemoteRestService) {
+  public AnuncioController(AnuncioService anuncioService, InvokeRemoteRestService invokeRemoteRestService) {
     this.anuncioService = anuncioService;
     this.invokeRemoteRestService = invokeRemoteRestService;
   }
@@ -44,10 +44,11 @@ public class AnuncioController {
 
   @DeleteMapping(value = "/delete-ads-byid", produces = "application/json; charset=utf-8")
   public String borra(
-  @RequestHeader String jwt , 
-  int id) {
+      @RequestHeader String jwt,
+      int id) {
     JwtBody resultado = invokeRemoteRestService.checkJwt(jwt);
-    if (resultado.getUserId() < 0) return "{'resultado':false}".replace('\'', '\"');
+    if (resultado.getUserId() < 0)
+      return "{'resultado':false}".replace('\'', '\"');
     anuncioService.kill(id);
     return "{'resultado':true}".replace('\'', '\"');
   }
@@ -58,11 +59,22 @@ public class AnuncioController {
       @RequestHeader String jwt,
       @RequestBody Anuncio anuncio) {
     JwtBody resultado = invokeRemoteRestService.checkJwt(jwt);
-    if (resultado.getUserId() < 0) return "{'resultado':false}".replace('\'', '\"');
+    if (resultado.getUserId() < 0)
+      return "{'resultado':false}".replace('\'', '\"');
 
     anuncioService.save(anuncio);
     return "{'resultado':true}".replace('\'', '\"');
   }
+  
+  @GetMapping(value = "/get-url-img", produces = "application/json; charset=utf-8")
+  public List<String> urlsImagenesUsusariosController(@RequestBody List<Anuncio> anuncios) {
+    return anuncios.stream().map(p -> this.invokeRemoteRestService.profileImage(p.getId())).collect(Collectors.toList());
+  }
+
+  
+
+
+
+
+
 }
-
-

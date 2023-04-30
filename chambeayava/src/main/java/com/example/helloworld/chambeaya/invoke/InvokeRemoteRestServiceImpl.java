@@ -16,7 +16,13 @@ public class InvokeRemoteRestServiceImpl implements InvokeRemoteRestService {
     
     @Override
     public JwtBody checkJwt(String jwt) {
-        String url = "https://access.qbits.mx/api/verify-jwt/" + jwt;
-        return restTemplate.getForObject(url, JwtBody.class);
+      String url = "https://access.qbits.mx/api/verify-jwt/" + jwt;
+      return restTemplate.getForObject(url, JwtBody.class);
+    }
+    
+    @Override
+    public String profileImage(int id) {
+      String url = "https://upload.qbits.mx/api/up/get-user-pricipal-image/" + id;
+      return restTemplate.getForObject(url, String.class);
     }
 }
