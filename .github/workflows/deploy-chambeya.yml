@@ -1,4 +1,4 @@
-name: CD examen
+name: CD chambeaya
 
 on:
   workflow_dispatch:
@@ -6,7 +6,7 @@ on:
   push:
     branches: [ "main" ]
     paths:
-      - 'chambeajava/**'
+      - 'chambeayava/**'
 
 jobs:
   
@@ -51,7 +51,7 @@ jobs:
         uses: docker/build-push-action@v2
         with:
             # relative path to the place where source code with Dockerfile is located
-            context: ./chambeajava/
+            context: ./chambeayava/
             # Note: tags has to be all lower-case
             tags: |
               ghcr.io/kixzeit/dockerized-chambeajava:latest
