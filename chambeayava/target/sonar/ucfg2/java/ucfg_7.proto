@@ -1,21 +1,0 @@
-
-acom.example.helloworld.chambeaya.Persona.model.PersonaServiceImpl#getAllPersons()Ljava/util/List;•
-Š/home/ubuntu/development/code/chambeajava/chambeayava/src/main/java/com/example/helloworld/chambeaya/Persona/model/PersonaServiceImpl.java ($"1*ø
-1 (Í
-Ê
- (B
-%0<com.example.helloworld.chambeaya.Persona.model.PersonaMapper"__id*t
-
-__unknown_file (X*VC
-Acom.example.helloworld.chambeaya.Persona.model.PersonaServiceImpl"
-personaMapperôñ
- ((
-%1java.util.List"\com.example.helloworld.chambeaya.Persona.model.PersonaMapper#getAllPersons()Ljava/util/List;*`
-
-__unknown_file (D
-B
-%0<com.example.helloworld.chambeaya.Persona.model.PersonaMapper2getAllPersons()""
- ()
-
-%1java.util.ListBEC
-Acom.example.helloworld.chambeaya.Persona.model.PersonaServiceImplH

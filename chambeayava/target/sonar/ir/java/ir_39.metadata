@@ -1,3 +1,0 @@
-com.example.helloworld.utilerias.Digestion#generateSaltedMd5(Ljava/lang/String;Ljava/lang/String;)[B
-java.security.MessageDigest#getInstance(Ljava/lang/String;)Ljava/security/MessageDigest;
-java.lang.String#getBytes(Ljava/nio/charset/Charset;)[B

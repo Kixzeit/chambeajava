@@ -1,21 +1,0 @@
-
-Wcom.example.helloworld.chambeaya.anuncio.AnuncioController#listaTotal()Ljava/util/List;Ž
-ƒ/home/ubuntu/development/code/chambeajava/chambeayava/src/main/java/com/example/helloworld/chambeaya/anuncio/AnuncioController.java (!"1*Û
-1 (Â
-¿
- (=
-%07com.example.helloworld.chambeaya.anuncio.AnuncioService"__id*n
-
-__unknown_file (R*P<
-:com.example.helloworld.chambeaya.anuncio.AnuncioController"
-anuncioServiceâß
- (*
-%1java.util.List"Scom.example.helloworld.chambeaya.anuncio.AnuncioService#getAllAds()Ljava/util/List;*[
-
-__unknown_file (?
-=
-%07com.example.helloworld.chambeaya.anuncio.AnuncioService2getAllAds()""
- (+
-
-%1java.util.ListB><
-:com.example.helloworld.chambeaya.anuncio.AnuncioControllerH

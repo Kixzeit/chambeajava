@@ -1,3 +1,0 @@
-com.example.helloworld.chambeaya.anuncio.AnuncioController#save(Ljava/lang/String;Lcom/example/helloworld/chambeaya/anuncio/model/Anuncio;)Ljava/lang/String;
-java.lang.String#length()I
-java.lang.String#replace(CC)Ljava/lang/String;

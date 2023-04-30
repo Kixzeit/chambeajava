@@ -1,28 +1,0 @@
-
-Åcom.example.helloworld.chambeaya.anuncio.AnuncioServiceImpl#getAdsByid(I)Lcom/example/helloworld/chambeaya/anuncio/model/Anuncio;è
-Ñ/home/ubuntu/development/code/chambeajava/chambeayava/src/main/java/com/example/helloworld/chambeaya/anuncio/AnuncioServiceImpl.java ("1*Ú
-1	 (¡
-æ
-	 (<
-%06com.example.helloworld.chambeaya.anuncio.AnuncioMapper"__id*n
-
-__unknown_file (R*P=
-;com.example.helloworld.chambeaya.anuncio.AnuncioServiceImpl"
-anuncioMapper“œ
-	 ("<
-%16com.example.helloworld.chambeaya.anuncio.model.Anuncio"ycom.example.helloworld.chambeaya.anuncio.AnuncioMapper#getById(I)Lcom/example/helloworld/chambeaya/anuncio/model/Anuncio;*Z
-
-__unknown_file (>
-<
-%06com.example.helloworld.chambeaya.anuncio.AnuncioMapper*"
-
-__unknown_file (
-""2
-getById(I)"J
- (#>
-<
-%16com.example.helloworld.chambeaya.anuncio.model.Anuncio: 
-
-__unknown_file (
-""B?=
-;com.example.helloworld.chambeaya.anuncio.AnuncioServiceImplH

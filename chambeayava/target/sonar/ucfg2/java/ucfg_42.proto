@@ -1,28 +1,0 @@
-
-ycom.example.helloworld.chambeaya.gasto.GastoServiceImpl#getPayByid(I)Lcom/example/helloworld/chambeaya/gasto/model/Gasto;‹
-€/home/ubuntu/development/code/chambeajava/chambeayava/src/main/java/com/example/helloworld/chambeaya/gasto/GastoServiceImpl.java ("1*Ô
-1 (·
-´
- (8
-%02com.example.helloworld.chambeaya.gasto.GastoMapper"__id*h
-
-__unknown_file (L*J9
-7com.example.helloworld.chambeaya.gasto.GastoServiceImpl"
-gastoMapperÂ¿
- ("8
-%12com.example.helloworld.chambeaya.gasto.model.Gasto"qcom.example.helloworld.chambeaya.gasto.GastoMapper#getById(I)Lcom/example/helloworld/chambeaya/gasto/model/Gasto;*V
-
-__unknown_file (:
-8
-%02com.example.helloworld.chambeaya.gasto.GastoMapper*"
-
-__unknown_file (
-""2
-getById(I)"F
- (#:
-8
-%12com.example.helloworld.chambeaya.gasto.model.Gasto: 
-
-__unknown_file (
-""B;9
-7com.example.helloworld.chambeaya.gasto.GastoServiceImplH

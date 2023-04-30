@@ -1,3 +1,0 @@
-com.example.helloworld.chambeaya.anuncio.AnuncioServiceImpl#save(Lcom/example/helloworld/chambeaya/anuncio/model/Anuncio;)V
-==
-getAdsByid com.example.helloworld.chambeaya.anuncio.AnuncioServiceImpl#getAdsByid(I)Lcom/example/helloworld/chambeaya/anuncio/model/Anuncio;
